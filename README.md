@@ -1459,64 +1459,6 @@ Press any key to exit...
 
 ## 📦 Building from Source
 
-### Prerequisites
-
-- Visual Studio 2022 or .NET 8.0 SDK
-- Windows 10/11 SDK
-
-### Build Commands
-
-**Debug build:**
-```cmd
-dotnet build NetworkPrinterApp.csproj --configuration Debug
-```
-
-**Release build:**
-```cmd
-dotnet build NetworkPrinterApp.csproj --configuration Release
-```
-
-**Publish single-file executable:**
-```cmd
-dotnet publish NetworkPrinterApp.csproj --configuration Release --output ./publish
-```
-
-The single-file executable will be created at `./publish/NetworkPrinterApp.exe` (164 MB)
-
-### Project Structure
-
-```
-WinNetworkPrinterApp/
-├── NetworkPrinterApp.csproj      # Project configuration
-├── App.xaml                       # Application entry point
-├── App.xaml.cs                    # Startup logic & command-line handling
-├── MainWindow.xaml                # Main UI layout
-├── SettingsWindow.xaml            # Settings dialog UI
-├── PrinterIcon.ico                # Application icon (Pantone 343C)
-├── Models/
-│   ├── AppSettings.cs             # Settings data model
-│   ├── PrinterInfo.cs             # Printer data model
-│   └── PrinterProtocol.cs         # Protocol enum (SMB/IPP)
-├── ViewModels/
-│   ├── MainViewModel.cs           # Main window business logic
-│   ├── PrinterViewModel.cs        # Printer item logic
-│   └── SettingsViewModel.cs       # Settings dialog logic
-├── Services/
-│   └── PrinterManager.cs          # Core printer operations
-├── Converters/
-│   └── EnumToBooleanConverter.cs  # XAML binding converter
-└── CommandLineArgs.cs             # Command-line parser
-```
-
-## ⚙️ Configuration
-
-### Settings File Location
-
-Settings are automatically saved to:
-```
-%APPDATA%\NetworkPrinterApp\settings.json
-```
-
 ### Configuration Options
 
 ```json
@@ -1572,18 +1514,6 @@ Settings are automatically saved to:
 ## 📄 License
 
 MIT License
-
-Copyright (c) 2025
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
