@@ -2,7 +2,9 @@
 
 A modern, user-friendly Windows application for installing network printers from a print server. Built with .NET 8.0 WPF and Material Design. **No admin rights required!**
 
-# Both app are still in testing and looking for feedback
+> Stil in testing looking for feedback. For bugs or enhancements, please open an issue.
+
+---
 - **Macos editions:** https://github.com/hov172/MacNetworkPrinterSharedUtility 
 ## ✨ Key Features
 
