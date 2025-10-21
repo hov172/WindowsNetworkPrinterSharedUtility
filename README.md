@@ -1,6 +1,7 @@
 # Network Printer Setup
 
 A modern, user-friendly Windows application for installing network printers from a print server. Built with .NET 8.0 WPF and Material Design. **No admin rights required!**
+The App should detect and show your network share home drive by default, If no network share is detected it will save to user desktop folder.
 
 > Stil in testing looking for feedback. For bugs or enhancements, please open an issue.
 
